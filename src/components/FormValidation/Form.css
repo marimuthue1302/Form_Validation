@@ -1,0 +1,131 @@
+.form_container {
+    margin: 100px auto;
+    width: 1000px;
+    box-shadow: 0 5px 7px 0 rgba(0, 0, 0, 0.2);
+    position: relative;
+    border-radius: 10px;
+    height: 600px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .close_btn {
+    position: absolute;
+    top: 2%;
+    right: 3%;
+    font-size: 1.5rem;
+    z-index: 1;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .form_content_left {
+    background: linear-gradient(to right, #59c173, #a17fe0, #5d26c1);
+    border-radius: 10px 0 0 10px;
+    position: relative;
+  }
+  
+  .form_img {
+    width: 70%;
+    height: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .form_content_right {
+    border-radius: 0 10px 10px 0;
+    position: relative;
+    background: linear-gradient(
+      90deg,
+      rgba(40, 40, 40) 0%,
+      rgba(17, 17, 17) 100%
+    );
+  }
+  
+  .form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .form h1 {
+    font-size: 1.3rem;
+    text-align: start;
+    width: 80%;
+    margin-bottom: 1rem;
+    color: white;
+  }
+  
+  .form_inputs {
+    margin-bottom: 0.5rem;
+    width: 80%;
+  }
+  
+  .form_inputs p {
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+    color: red;
+  }
+  
+  .form_label {
+    display: inline-block;
+    font-size: 0.8rem;
+    margin-bottom: 6px;
+    color: white;
+  }
+  
+  .form_input {
+    display: block;
+    padding-left: 10px;
+    outline: none;
+    border-radius: 2px;
+    height: 40px;
+    width: 100%;
+    border: none;
+  }
+  
+  .error_username, .error_email, .error_password, .error_cpassword {
+    border: 2px solid red;
+    border-radius: 2px;
+  }
+  
+  .form_input::placeholder {
+    color: #595959;
+    font-size: 12px;
+  }
+  
+  .form_input_btn {
+    width: 80%;
+    height: 40px;
+    margin-top: 10px;
+    border-radius: 2px;
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    background: linear-gradient(to right, #59c173, #a17fe0, #5d26c1);
+    cursor: pointer;
+  }
+  
+  .form_input_login {
+    font-size: 0.9rem;
+    margin-top: 10px;
+    color: white;
+    width: 80%;
+    text-align: center;
+  }
+  
+  .form_input_login a {
+    text-decoration: none;
+    color: #27cdff;
+    font-weight: 600;
+  }
